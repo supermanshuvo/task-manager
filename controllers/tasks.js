@@ -7,8 +7,8 @@ const createTaks = (req,res)=>{
 const getTaks = (req,res)=>{
     res.send('create Task')
 }
-const createTaks = (req,res)=>{
-    res.send('get Single Task')
+const updateTaks = (req,res)=>{
+    res.send('update Single Task')
 }
 const createTaks = (req,res)=>{
     res.send('create Task')
