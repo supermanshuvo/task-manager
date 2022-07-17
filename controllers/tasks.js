@@ -4,7 +4,7 @@ const getAllTasks = (req,res)=>{
 const createTaks = (req,res)=>{
     res.send('create Task')
 }
-const createTaks = (req,res)=>{
+const getTaks = (req,res)=>{
     res.send('create Task')
 }
 const createTaks = (req,res)=>{
