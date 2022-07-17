@@ -2,10 +2,10 @@ const getAllTasks = (req,res)=>{
     res.send('All item');
 };
 const createTaks = (req,res)=>{
-    res.send(req.body);
+    res.json(req.body);
 }
 const getTaks = (req,res)=>{
-    res.send('create Task')
+    res.json({id:req.params.id});
 }
 const updateTaks = (req,res)=>{
     res.send('update Single Task')
