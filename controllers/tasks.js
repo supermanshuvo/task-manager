@@ -2,7 +2,7 @@ const getAllTasks = (req,res)=>{
     res.send('All item');
 };
 const createTaks = (req,res)=>{
-    res.send('create Task')
+    res.send(req.body);
 }
 const getTaks = (req,res)=>{
     res.send('create Task')
