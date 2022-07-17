@@ -13,4 +13,6 @@ const updateTaks = (req,res)=>{
 const deleteTaks = (req,res)=>{
     res.send('delete single Task')
 }
-module.exports = {getAllTasks};
+module.exports = {
+    getAllTasks,createTaks,getTaks,updateTaks,deleteTaks
+};
