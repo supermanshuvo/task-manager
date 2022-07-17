@@ -10,7 +10,7 @@ const getTaks = (req,res)=>{
 const updateTaks = (req,res)=>{
     res.send('update Single Task')
 }
-const createTaks = (req,res)=>{
-    res.send('create Task')
+const deleteTaks = (req,res)=>{
+    res.send('delete single Task')
 }
 module.exports = {getAllTasks};
