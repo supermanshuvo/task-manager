@@ -1,8 +1,8 @@
-require('./db/connect');
 const express = require('express');
 const app = express();
 const tasks = require('./routes/tasks');
-const port = 3000;
+const connectDB = require('./db/connect');
+
 
 // Middleware
 app.use(express.json());
@@ -17,7 +17,17 @@ app.get('/hello',(req,res)=>{
 app.use('/api/v1/tasks',tasks);
 
 
+const port = 3000;
 
-app.listen(port,function (req,res){
-   console.log(`Running port : ${port}`);
-});
+const start = async ()=>{
+   try{
+      await connectDB();
+      app.listen(port,function (req,res){
+         console.log(`Running port : ${port}`);
+      });
+   }catch (error){
+      console.log(error);
+   }
+}
+
+start();
