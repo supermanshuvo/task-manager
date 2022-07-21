@@ -1,0 +1,1 @@
+const connection ='mongodb+srv://shuvo:<password>@nodeexpressproject.jexqk.mongodb.net/?retryWrites=true&w=majority;'
